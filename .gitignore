@@ -1,0 +1,15 @@
+# VS Code settings
+.vscode/
+
+# Zip files
+*.zip
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node (future safety)
+node_modules/
