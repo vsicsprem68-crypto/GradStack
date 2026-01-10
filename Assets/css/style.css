@@ -455,28 +455,6 @@ body {
 }
 
 /* ========= RESPONSIVE ========= */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        /* simple: later JS se hamburger bna lena */
-    }
-
-    .hero {
-        padding-top: 4.5rem;
-    }
-
-    .hero-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-visual {
-        justify-content: center;
-    }
-
-    .search-form {
-        padding: 1.4rem 1.3rem;
-    }
-}
 
 
 /* ===== SIDEBAR MENU ===== */
@@ -607,3 +585,4 @@ body {
     white-space: nowrap;
   }
 }
+
