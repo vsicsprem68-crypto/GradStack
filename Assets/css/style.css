@@ -477,3 +477,133 @@ body {
         padding: 1.4rem 1.3rem;
     }
 }
+
+
+/* ===== SIDEBAR MENU ===== */
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 12px;
+  display: none;
+}
+
+/* show hamburger on mobile */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+}
+/* Yha se sidebar ke liye CSS hai */
+/* overlay */
+#overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: none;
+  z-index: 30;
+}
+
+/* sidebar */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 280px;
+  height: 100%;
+  background: #ffffff;
+  z-index: 40;
+  transition: left 0.3s ease;
+  box-shadow: 8px 0 30px rgba(0,0,0,0.25);
+  overflow-y: auto;
+}
+
+/* sidebar header */
+.sidebar-header {
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 1rem 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-header span {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* sidebar menu */
+#sidebar ul {
+  list-style: none;
+}
+
+#sidebar ul li {
+  padding: 0.85rem 1.1rem;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+#sidebar ul li:hover {
+  background: #f1f5f9;
+}
+
+#sidebar ul li strong {
+  color: #2563eb;
+}
+
+.divider {
+  height: 10px;
+  background: #f1f5f9;
+  padding: 0 !important;
+}
+
+/* ===== MOBILE NAV CONTROL ===== */
+
+
+
+/* ===== NAVBAR FIX ===== */
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* left group */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* right group */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+/* ===== MOBILE BEHAVIOUR ===== */
+@media (max-width: 768px) {
+
+  /* hamburger visible */
+  .menu-icon {
+    display: block;
+  }
+
+  /* login always visible */
+  .nav-login {
+    display: inline-flex !important;
+  }
+
+  /* hide old desktop nav links */
+  .nav-links {
+    display: none;
+  }
+
+  /* logo fix: never go right */
+  .logo {
+    white-space: nowrap;
+  }
+}

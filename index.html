@@ -12,23 +12,69 @@
     <!-- ========== NAVBAR ========== -->
     <header class="navbar">
         <div class="container nav-content">
+
+             <!-- LEFT -->
+            <div class="nav-left">
+            <div class="menu-icon" onclick="openMenu()">☰</div>
+
             <div class="logo">
                 <!-- Text logo, later yahan image laga sakta hai -->
                 <span class="logo-icon">🎓</span>
                 <span class="logo-text">GradStack</span>
             </div>
+            </div>
 
-            <nav class="nav-links">
+
+            <!-- RIGHT -->
+                 <div class="nav-right">
+            <nav class="nav-links nav-right">
                 <a href="#hero">Home</a>
                 <a href="#resources">PYQs</a>
                 <a href="#resources">Notes</a>
                 <a href="#resources">Practice</a>
                 <a href="#search">Search</a>
                 <a href="about_us.html">About Us</a>
-                <a href="Login Page/login.html" class="btn-outline">Login</a>
+                <a href="Login Page/login.html" class="btn-outline nav-login">Login</a>
             </nav>
+            </div>
         </div>
     </header>
+
+    
+    <!-- OVERLAY -->
+<div id="overlay" onclick="closeMenu()"></div>
+
+<!-- SIDEBAR -->
+<div id="sidebar">
+  <div class="sidebar-header">
+    <h3>Your Account</h3>
+    <span onclick="closeMenu()">✕</span>
+  </div>
+
+  <ul>
+    <li><strong>Trending</strong></li>
+    <li>Bestsellers</li>
+    <li>New Releases</li>
+    <li>Movers & Shakers</li>
+
+    <li class="divider"></li>
+
+    <li><strong>Top Categories</strong></li>
+    <li>BCA Resources</li>
+    <li>BBA Resources</li>
+    <li>Practice Zone</li>
+    <li>Progress Tracker</li>
+
+    <li class="divider"></li>
+
+    <li><strong>Quick Links</strong></li>
+    <li>Login</li>
+    <li>About Us</li>
+  </ul>
+</div>
+
+
+
 
     <!-- ========== HERO SECTION ========== -->
     <section id="hero" class="hero">
@@ -234,6 +280,7 @@
             © 2025 GradStack • Built for slow but faadu progress 🔥
         </div>
     </footer>
+    <script src="sidemenu.js"></script>
 </body>
 </html>
 
