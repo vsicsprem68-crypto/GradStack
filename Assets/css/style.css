@@ -211,6 +211,7 @@ body {
     max-width: 340px;
     box-shadow: 0 18px 40px rgba(15, 23, 42, 0.7);
     border: 1px solid rgba(148, 163, 184, 0.4);
+    transform: none;
 }
 
 .dashboard-card h3 {
@@ -598,3 +599,37 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hero-text {
+    order: 1;
+  }
+
+  .hero-visual {
+    order: 2;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .dashboard-card {
+    position: static;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+  }
+}
