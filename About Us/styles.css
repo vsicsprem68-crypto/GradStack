@@ -50,7 +50,7 @@ html {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--navy) 100%);
+    background: linear-gradient(135deg, var(--dark-blue) 20%, var(--navy) 60%);
     padding: 8rem 2rem 6rem;
     text-align: center;
     position: relative;
